@@ -3,32 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abu-Ubaida</title>
+  <title>Abu-Ubaida's Portfolio</title>
 
   <!-- Add Font Awesome and Bootstrap libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <!-- Bootstrap JavaScript files -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <div class="container">
-    <div class="left-side">
-      <p>Name: Abu Ubaida</p>
-    </div>
-    <div class="right-side">
-      <p>University: University of Karachi</p>
-    </div>
-    <div class="middle">
-      <p>Random Intro</p>
-    </div>
+    <!-- Header Section -->
+    <header class="text-center py-5">
+      <h1>Abu Ubaida</h1>
+      <p>Full Stack Developer</p>
+    </header>
+
+    <!-- Summary Section -->
+    <section id="summary" class="py-5">
+      <h2>Summary</h2>
+      <p>Insert your summary here...</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+      <h2>Experience</h2>
+      <div class="row" id="experienceList">
+        <!-- Experience items will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+      <h2>Education</h2>
+      <div class="row" id="educationList">
+        <!-- Education items will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <h2>Projects</h2>
+      <div class="row" id="projectList">
+        <!-- Project items will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <h2>Skills</h2>
+      <ul id="skillsList">
+        <!-- Skills items will be dynamically added here -->
+      </ul>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-5">
+      <h2>Certificates</h2>
+      <div class="row" id="certificateList">
+        <!-- Certificate items will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-3">
+      <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+    </footer>
   </div>
-  <div class="footer">
-    <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
-  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
