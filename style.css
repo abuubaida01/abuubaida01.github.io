@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side {
+  width: 30%;
+}
+.right-side {
+  width: 30%;
+}
+.middle {
+  width: 30%;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+}
