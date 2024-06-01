@@ -5,75 +5,194 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abu-Ubaida's Portfolio</title>
 
-  <!-- Add Font Awesome and Bootstrap libraries -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Add Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
   <div class="container">
-    <!-- Header Section -->
-    <header class="text-center py-5">
-      <h1>Abu Ubaida</h1>
-      <p>Full Stack Developer</p>
+    <!-- Header div -->
+    <header class="text-center py-5 bg-light mt-5 rounded " >
+      <h1 class="display-4">Abu Ubaida</h1>
+      <p class="lead">Junior Software Engineer at SmartBenefits</p>
+      <p class="lead">
+        <i class="fas fa-map-marker-alt"></i> Karachi, Pakistan &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="far fa-envelope"></i> abuubaida901@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fas fa-phone"></i> +92 331-2371338
+      </p>
     </header>
+    
 
-    <!-- Summary Section -->
-    <section id="summary" class="py-5">
-      <h2>Summary</h2>
-      <p>Insert your summary here...</p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-5">
-      <h2>Experience</h2>
-      <div class="row" id="experienceList">
-        <!-- Experience items will be dynamically added here -->
+    <!-- Summary div -->
+    <div id="summary" class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="text-center">Summary</h2>
+            <div class="summary-content">
+              <p class="text-center">Experienced professional with expertise in Django & DRF development and moderate experience in React and DevOps. Looking for a junior full stack software engineer position to contribute my expertise and drive mutual growth.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education" class="py-5">
-      <h2>Education</h2>
-      <div class="row" id="educationList">
-        <!-- Education items will be dynamically added here -->
+
+    <!-- Experience div -->
+    <div id="experience" class="py-4 bg-light rounded ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="text-center">Experience</h2>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="my-4">
+                  <h4 class="text-uppercase"><i class="fas fa-briefcase"></i> Junior Software Engineer</h4>
+                  <p><strong>SmartBenefits</strong> - April 2024 - Present</p>
+                  <ul>
+                    <li>Responsible for maintaining the HR portal, internal operations portal, and certain features of the mobile app.</li>
+                    <li>Developing apps like feedback and Provident Funds.</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="my-2 w-100">
+              <div class="col-md-12">
+                <div class="my-4">
+                  <h4 class="text-uppercase"><i class="fas fa-briefcase"></i> Internship</h4>
+                  <p><strong>SmartBenefits</strong> - January 2024 - March 2024</p>
+                  <ul>
+                    <li>Developed a feedback feature including backend logic, database design, and APIs.</li>
+                    <li>Implemented notification functionality using Reteno.</li>
+                    <li>Contributed significantly to the HR portal and mobile app development.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-      <h2>Projects</h2>
-      <div class="row" id="projectList">
-        <!-- Project items will be dynamically added here -->
+    </div>
+    
+    <!-- Education div -->
+    <div id="education" class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="text-center">Education</h2>
+            <div class="row">
+              <div class="col-md-2 text-center">
+                <i class="fas fa-graduation-cap fa-3x"></i>
+              </div>
+              <div class="col-md-10">
+                <p>Bachelor in Software Engineering (BSSE)</p>
+                <p>Minor in SE, University of Karachi UBIT</p>
+                <p>Final Year Student with 3.4 GPA, Expected Graduation Oct 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+    
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-      <h2>Skills</h2>
-      <ul id="skillsList">
-        <!-- Skills items will be dynamically added here -->
-      </ul>
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="py-5">
-      <h2>Certificates</h2>
-      <div class="row" id="certificateList">
-        <!-- Certificate items will be dynamically added here -->
+   <!-- Projects div -->
+    <div id="projects" class="py-4 bg-light rounded">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="text-center">Final Year Project</h2>
+            <div>
+              <div class="project-item">
+                <h4 class="text-title font-weight-bold"><img src="media/az-logo.png" alt="logo" class="img-fluid" width="50" height="50">&nbsp;AddaZakat, The Easiest Way to Pay Zakat</h4>
+                <p><strong>September 2022 - Present</strong></p>
+                <ul>
+                  <li>AddaZakat: provides the opportunity to contribute Zakat or Donations directly to needy families and supports Masajid, Madaris, and NGOs in raising funds.</li>
+                  <li>Technology Stack: Frontend built with React, Backend using Django and Django RestFramework.</li>
+                  <li>Authentication: Developed APIs for user registration, login, password change, email verification, and password recovery.</li>
+                  <li>Posts: Seekers create posts with comprehensive information, documents, and videos, which are verified though AI and published. Donors can upvote, downvote, comment, save, report, and donate to posts.</li>
+                  <li>Features: Users get personalized recommendations based on their activity, access their browsing history and saved posts, filter and search content, toggle between dark and light modes, update their profile, follow or unfollow other users, report inappropriate content or users, and adjust settings.</li>
+                  <li>Currently in the development phase, set to be completed by October, with deploy on AWS.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Footer Section -->
-    <footer class="text-center py-3">
-      <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+
+    <!-- Skills div -->
+    <div id="skills" class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="skill-item">
+              <h4>Backend Development:</h4>
+              <p>Proficient in Python, Django, Django Rest-Framework, along with their essential libraries like Celery, Graphene-Django, Pandas, and Numpy.</p>
+            </div>
+            <div class="skill-item">
+              <h4>Frontend Development:</h4>
+              <p>Skilled in React JS, JavaScript, HTML, CSS, AJAX, and Tailwind CSS for creating engaging user interfaces.</p>
+            </div>
+            <div class="skill-item">
+              <h4>DevOps:</h4>
+              <p>Good at Docker and Kubernetes for containerizing applications, skilled with the CI/CD pipeline using GitHub Actions, good at Git and GitHub, and possess foundational knowledge of GCP and AWS.</p>
+            </div>
+            <div class="skill-item">
+              <h4>Machine Learning and AI:</h4>
+              <p>Familiar with machine learning and deep learning, and have worked on model transfer learning and integrating AI models into Django-based applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Certificates div -->
+    <div id="certificates" class="py-4 bg-light">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center">Certificates</h2>
+          <div class="my-3">
+            <a href="https://drive.google.com/file/d/1-QzNydqYMNzbdRfcEM69zDR0tVqDhrML/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Convolutional Neural Networks</a>
+            <a href="https://drive.google.com/file/d/1-BFmmjuTPiHkGwLgmM21KQinB856TX82/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Improving Deep Neural Networks</a>
+            <a href="https://drive.google.com/file/d/1QgOW5y1y7Nx1Fn3UGTEfDOGkv7ufq5kK/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Neural Networks and Deep Learning</a>
+            <a href="https://drive.google.com/file/d/12kKAISj6xdfgrvbRF72Z-9E6QpAxBKox/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Machine Learning with Tree-Based Models</a>
+            <a href="https://drive.google.com/file/d/1jCpJD9TRpkiQN4ErsWfUjIqGV6K362a-/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Supervised Learning with scikit-learn</a>
+            <a href="https://drive.google.com/file/d/1fKBVHeqjh2alwjdq8bOxjoUm9Z7uEvQd/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Unsupervised Learning </a>
+            <a href="https://drive.google.com/file/d/1DNr-A7PxAlNqbWkwUVS_aMBReyh3el30/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Python </a>
+            <a href="https://drive.google.com/file/d/1ES6L8w16VECtm-V3ynlTaLPCMdxEGpDh/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Exploratory Data Analysis</a>
+            <a href="https://drive.google.com/file/d/1Ffs3wkUpiawlzKXtMlRhQm4_wL0FvkHB/view?usp=drive_link" target="_blank" class="btn btn-primary btn-sm m-1">Data Collection & Data Wrangling </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer div -->
+    <footer class="py-3 text-center">
+      <p>Connect with me</p>
+      <a href="https://www.linkedin.com/in/abuubaidaa/" target="_blank" class="btn btn-outline-primary btn-lg mx-1"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/abu_ubaidaa" target="_blank" class="btn btn-outline-primary btn-lg mx-1"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61559025905118" target="_blank" class="btn btn-outline-primary btn-lg mx-1"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/abuubaida01" target="_blank" class="btn btn-outline-primary btn-lg mx-1"><i class="fab fa-github"></i></a>
+      
+      <p class="mt-3">&copy; 2024 Abu-Ubaida. All rights reserved.</p>
+
     </footer>
   </div>
 
-  <!-- Custom JavaScript -->
-  <script src="script.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
