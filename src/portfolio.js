@@ -25,8 +25,8 @@ const greeting = {
   subTitle: emoji(
     "Results-driven software engineer with a strong foundation in problem-solving, Python, Django, and Django Rest Framework (DRF). Complemented by expertise in frontend technologies and DevOps. Passionate about building scalable, AI-driven solutions that deliver seamless user experience, and impacting millions of users daily.Results-driven software engineer with a strong foundation in problem-solving, Python, Django, and Django Rest Framework (DRF). Complemented by expertise in frontend technologies and DevOps. Passionate about building scalable, AI-driven solutions that deliver seamless user experience, and impacting millions of users daily."
   ),
-  resumeLink:"./assets/Junior.Software.Engineer.pdf", 
-  displayGreeting: true 
+  resumeLink: "./assets/Junior.Software.Engineer.pdf",
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -130,13 +130,13 @@ const educationInfo = {
       subHeader: "Bachelor in Software Engineering (BSSE)",
       duration: "January 2021 - November 2024",
       // desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: ["Got 3.1 CGPA",]
+      descBullets: ["Got 3.1 CGPA"]
     },
     {
       schoolName: "Government Islamia Science College, Karachi",
       logo: require("./assets/images/Islamia_Science_College_Karachi_logo.png"),
       subHeader: "Intermediate board",
-      duration: "Jan 2019 - Dec 2020",
+      duration: "Jan 2019 - Dec 2020"
       // desc: "Ranked top 5% in the college. Took Pre Engineering",
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
@@ -174,12 +174,12 @@ const workExperiences = {
       company: " Smartbenefits.pk",
       companylogo: require("./assets/images/smartbenefits.png"),
       date: "January 2024 – Present",
-      desc: "I developed key features for the HR Portal, including a scheduling tool for managing employee insurance, a Net Promoter Score system for HR feedback, and a provident fund management feature with real-time updates. I implemented a doctor chat feature with prescription delivery, managed policy and KYC document life cycles, and automated insurance policy expiry reminders using Celery. I integrated third-party APIs like HubSpot, Mailerlite, and Vouch365, and created a feedback system for OPD claims generating 500+ responses weekly. I also collaborated with senior developers to improve my coding, debugging, and documentation skills.",
+      desc: "I developed key features for the HR Portal, including a scheduling tool for managing employee insurance, a Net Promoter Score system for HR feedback, and a provident fund management feature with real-time updates. I implemented a doctor chat feature with prescription delivery, managed policy and KYC document life cycles, and automated insurance policy expiry reminders using Celery. I integrated third-party APIs like HubSpot, Mailerlite, and Vouch365, and created a feedback system for OPD claims generating 500+ responses weekly. I also collaborated with senior developers to improve my coding, debugging, and documentation skills."
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
-    },
+    }
     // {
     //   role: "Front-End Developer",
     //   company: "Quora",
@@ -207,7 +207,8 @@ const bigProjects = {
     {
       image: require("./assets/images/1sefarz-logo.png"),
       projectName: "AddaZakat",
-      projectDesc: "I worked on AddaZakat, a platform enabling donations of Zakat to needy families, as well as supporting Masajid, Madaris, and NGOs. I designed authentication features for user registration, login, email verification, and password management. I developed the posts feature, allowing users to create posts with information, documents, and videos, which are AI-verified before publication. Donors can engage with posts through upvoting, downvoting, commenting, saving, reporting, and donating. I also implemented user-centric features such as personalized post recommendations, browsing history, saved posts, advanced search/filter, dark mode, profile management, and customizable user settings.",
+      projectDesc:
+        "I worked on AddaZakat, a platform enabling donations of Zakat to needy families, as well as supporting Masajid, Madaris, and NGOs. I designed authentication features for user registration, login, email verification, and password management. I developed the posts feature, allowing users to create posts with information, documents, and videos, which are AI-verified before publication. Donors can engage with posts through upvoting, downvoting, commenting, saving, reporting, and donating. I also implemented user-centric features such as personalized post recommendations, browsing history, saved posts, advanced search/filter, dark mode, profile management, and customizable user settings.",
       footerLink: [
         {
           name: "Visit Website",
@@ -215,7 +216,7 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
+    }
     // {
     //   image: require("./assets/images/nextuLogo.webp"),
     //   projectName: "Nextu",
@@ -236,8 +237,7 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Certifications"),
-  subtitle:
-    "Certifications, Some Cool Stuff that I have done !",
+  subtitle: "Certifications, Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
