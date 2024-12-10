@@ -27,8 +27,7 @@ export default function Greeting() {
                   alt="Abu-Ubaida"
                   src={require("../../assets/images/personal-pic1.png")}
                   className="my-picture-class"
-                />
-                {" "}
+                />{" "}
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
@@ -57,7 +56,6 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </Fade>

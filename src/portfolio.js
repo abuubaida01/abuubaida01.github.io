@@ -53,7 +53,9 @@ const skillsSection = {
     emoji(
       "⚡ I can design and implement robust RESTful APIs using Django Rest Framework and asynchronous programming to handle high-concurrency use cases."
     ),
-    emoji("⚡ I'm able to create visually appealing and highly responsive React.js frontends that scale seamlessly to handle large user bases, integrating with backend systems efficiently for a smooth user experience."),
+    emoji(
+      "⚡ I'm able to create visually appealing and highly responsive React.js frontends that scale seamlessly to handle large user bases, integrating with backend systems efficiently for a smooth user experience."
+    ),
     emoji(
       "⚡ I Use containerization (Docker, Kubernetes) and CI/CD pipelines (GitHub Actions) to streamline deployments and ensure reliable software delivery."
     )
@@ -99,7 +101,6 @@ https://fontawesome.com/icons?d=gallery */
     //   skillName: "PSQL",
     //   fontAwesomeClassname: "fas fa-database"
     // },
-    
     // {
     //   skillName: "aws",
     //   fontAwesomeClassname: "fab fa-aws"
@@ -162,12 +163,13 @@ const techStack = {
       progressPercentage: "90%"
     },
     {
-      Stack: "Python, Django, Django-Rest-Framework, Unit Testing, Celery, caching strategies, Redis and memcached",
+      Stack:
+        "Python, Django, Django-Rest-Framework, Unit Testing, Celery, caching strategies, Redis and memcached",
       progressPercentage: "89%"
     },
     {
       Stack: "React, HTML, Tailwind ",
-      progressPercentage: "70%" 
+      progressPercentage: "70%"
     },
     {
       Stack: "SQL,MySQL PostgreSQL",
@@ -184,8 +186,7 @@ const techStack = {
     {
       Stack: "Cloud Platforms AWS",
       progressPercentage: "70%"
-    },
-
+    }
   ],
   displayCodersrank: true
 };
