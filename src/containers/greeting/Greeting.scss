@@ -43,7 +43,7 @@
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: 90px;
   line-height: 1.1;
   color: $textColor !important;
 }
@@ -93,7 +93,8 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 80px;
+    margin: 10px;
   }
   .greeting-text-p {
     font-size: 20px;
@@ -124,4 +125,8 @@
   .main {
     width: auto;
   }
+}
+.my-picture-class {
+  width: 200px; /* Adjust size */
+  border-radius: 50%; /* Make it circular if needed */
 }

@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1500 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Abu-Ubaida",
-  title: "Hi all, I'm Abu-Ubaida",
+  title: "Hi, I'm Abu-Ubaida",
   subTitle: emoji(
-    "Results-driven software engineer with a strong foundation in problem-solving, Python, Django, and Django Rest Framework (DRF). Complemented by expertise in frontend technologies and DevOps. Passionate about building scalable, AI-driven solutions that deliver seamless user experience, and impacting millions of users daily.Results-driven software engineer with a strong foundation in problem-solving, Python, Django, and Django Rest Framework (DRF). Complemented by expertise in frontend technologies and DevOps. Passionate about building scalable, AI-driven solutions that deliver seamless user experience, and impacting millions of users daily."
+    "Results-driven software engineer with a strong foundation in problem-solving, Python, Django, and Django Rest Framework (DRF). Complemented by expertise in frontend technologies and DevOps. Passionate about building scalable, AI-driven solutions that deliver seamless user experience, and impacting millions of users daily."
   ),
   resumeLink: "./assets/Junior.Software.Engineer.pdf",
   displayGreeting: true
@@ -51,11 +51,11 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ I can design and implement robust RESTful APIs using Django Rest Framework and asynchronous programming to handle high-concurrency use cases."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ I'm able to create visually appealing and highly responsive React.js frontends that scale seamlessly to handle large user bases, integrating with backend systems efficiently for a smooth user experience."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ I Use containerization (Docker, Kubernetes) and CI/CD pipelines (GitHub Actions) to streamline deployments and ensure reliable software delivery."
     )
   ],
 
@@ -63,58 +63,67 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    // {
+    //   skillName: "HTML",
+    //   fontAwesomeClassname: "fab fa-html5"
+    // },
+    // {
+    //   skillName: "Tailwind CSS",
+    //   fontAwesomeClassname: "fab fa-css3-alt"
+    // },
+    // {
+    //   skillName: "SQL",
+    //   fontAwesomeClassname: "fab fa-database"
+    // },
+    // {
+    //   skillName: "JavaScript",
+    //   fontAwesomeClassname: "fab fa-js"
+    // },
+    // {
+    //   skillName: "React JS",
+    //   fontAwesomeClassname: "fab fa-react"
+    // },
+    // {
+    //   skillName: "Django",
+    //   fontAwesomeClassname: "fab fa-python"
+    // },
+    // {
+    //   skillName: "FastAPI",
+    //   fontAwesomeClassname: "fab fa-python"
+    // },
+    // {
+    //   skillName: "DRF",
+    //   fontAwesomeClassname: "fab fa-python"
+    // },
+    // {
+    //   skillName: "PSQL",
+    //   fontAwesomeClassname: "fas fa-database"
+    // },
+    
+    // {
+    //   skillName: "aws",
+    //   fontAwesomeClassname: "fab fa-aws"
+    // },
+    // {
+    //   skillName: "MSQL",
+    //   fontAwesomeClassname: "fas fa-database"
+    // },
+    // {
+    //   skillName: "K8s",
+    //   fontAwesomeClassname: "fas fa-K8s"
+    // },
+    // {
+    //   skillName: "python",
+    //   fontAwesomeClassname: "fab fa-python"
+    // },
+    // {
+    //   skillName: "docker",
+    //   fontAwesomeClassname: "fab fa-docker"
+    // },
+    // {
+    //   skillName: "Git",
+    //   fontAwesomeClassname: "fab fa-git"
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -149,19 +158,36 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "600%" //Insert relative proficiency in percentage
+      Stack: "Data Structures and Algorithms ",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "85%"
+      Stack: "Python, Django, Django-Rest-Framework, Unit Testing, Celery, caching strategies, Redis and memcached",
+      progressPercentage: "89%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "85%"
-    }
+      Stack: "React, HTML, Tailwind ",
+      progressPercentage: "70%" 
+    },
+    {
+      Stack: "SQL,MySQL PostgreSQL",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Docker, Kubernetes",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Git, GitHub, CI/CD Pipeline using GitHub Actions",
+      progressPercentage: "76%"
+    },
+    {
+      Stack: "Cloud Platforms AWS",
+      progressPercentage: "70%"
+    },
+
   ],
-  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true
 };
 
 // Work experience section
@@ -244,7 +270,7 @@ const achievementSection = {
       title: "Google Code-In Finalist",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/personal-pic1.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
@@ -265,7 +291,7 @@ const achievementSection = {
       title: "Google Assistant Action",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/personal-pic1.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
@@ -278,7 +304,7 @@ const achievementSection = {
     {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/personal-pic1.png"),
       imageAlt: "PWA Logo",
       footerLink: [
         {name: "Certification", url: ""},
