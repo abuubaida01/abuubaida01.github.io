@@ -264,59 +264,161 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Certifications"),
-  subtitle: "Certifications, Some Cool Stuff that I have done !",
+  subtitle: "Some Stuff that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      title: "Convolutional Neural Networks",
+      subtitle:"",
       image: require("./assets/images/personal-pic1.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1-QzNydqYMNzbdRfcEM69zDR0tVqDhrML/view?usp=drive_link"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
+    
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      title: "Improving Deep Neural Networks",
+      subtitle:"",
       image: require("./assets/images/personal-pic1.png"),
-      imageAlt: "Google Assistant Action Logo",
+      imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1-BFmmjuTPiHkGwLgmM21KQinB856TX82/view?usp=drive_link" 
+        },
+      ]
+    },
+    
+    {
+      title: "Neural Networks and Deep Learning",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1QgOW5y1y7Nx1Fn3UGTEfDOGkv7ufq5kK/view?usp=drive_link" 
+        },
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "Machine Learning with Tree-Based Models",
+      subtitle:"",
       image: require("./assets/images/personal-pic1.png"),
-      imageAlt: "PWA Logo",
+      imageAlt: "Google Code-In Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/12kKAISj6xdfgrvbRF72Z-9E6QpAxBKox/view?usp=drive_link" 
+        },
       ]
-    }
+    },
+
+    {
+      title: "Supervised Learning with scikit-learn",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1jCpJD9TRpkiQN4ErsWfUjIqGV6K362a-/view?usp=drive_link" 
+        },
+      ]
+    },
+
+    {
+      title: "Unsupervised Learning",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1fKBVHeqjh2alwjdq8bOxjoUm9Z7uEvQd/view?usp=drive_link" 
+        },
+      ]
+    },
+
+    {
+      title: "Python",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1DNr-A7PxAlNqbWkwUVS_aMBReyh3el30/view?usp=drive_link" 
+        },
+      ]
+    },
+
+    {
+      title: "Exploratory Data Analysis",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1ES6L8w16VECtm-V3ynlTaLPCMdxEGpDh/view?usp=drive_link" 
+        },
+      ]
+    },
+
+    {
+      title: "Data Collection & Data Wrangling",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1Ffs3wkUpiawlzKXtMlRhQm4_wL0FvkHB/view?usp=drive_link" 
+        },
+      ]
+    },
+
+    {
+      title: "Practical Database Design",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1zaVVwSh0TXJ5JFUcybecmkGcLKOFXgQY/view?usp=drive_link" 
+        },
+      ]
+    },
+
+    {
+      title: "Problem Solving",
+      subtitle:"",
+      image: require("./assets/images/personal-pic1.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        { 
+          name: "Visit here",
+          url: "https://drive.google.com/file/d/1_0Dv193L_IrX-GUZKnxD3ByzzpS8NrZk/view?usp=drive_link" 
+        },
+      ]
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
