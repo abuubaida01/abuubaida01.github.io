@@ -239,9 +239,22 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "addazakat.com"
+          url: "https://addazakat.com/"
         }
         //  you can add extra buttons here.
+      ]
+    },
+
+    {
+      image: require("./assets/images/AZbloge.png"),
+      projectName: "AZblog",
+      projectDesc:
+        "I have developed a blog website to share my thoughts, ideas, and expertise through well-crafted articles. The platform is designed to provide readers with valuable insights on various topics, showcasing my skills in web development, content creation, and design. By building this blog, I aim to cultivate a space for knowledge sharing and personal expression while continuously improving my technical and creative abilities.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://blog.addazakat.com/"
+        }
       ]
     }
     
