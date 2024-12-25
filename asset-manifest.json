@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.65e14010.css",
-    "main.js": "/static/js/main.debd1a05.js",
+    "main.js": "/static/js/main.5c9bdd1e.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.c337433a.chunk.js": "/static/js/64.c337433a.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -15,12 +15,13 @@
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/1sefarz-logo.png": "/static/media/1sefarz-logo.0e3a3718a4fc04b9875b.png",
+    "static/media/AZbloge.png": "/static/media/AZbloge.ce221d3a1eed09e83e85.png",
     "static/media/ubit.jpeg": "/static/media/ubit.f723f5d435d8f4229312.jpeg",
     "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.65e14010.css.map": "/static/css/main.65e14010.css.map",
-    "main.debd1a05.js.map": "/static/js/main.debd1a05.js.map",
+    "main.5c9bdd1e.js.map": "/static/js/main.5c9bdd1e.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.c337433a.chunk.js.map": "/static/js/64.c337433a.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -28,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.65e14010.css",
-    "static/js/main.debd1a05.js"
+    "static/js/main.5c9bdd1e.js"
   ]
 }
