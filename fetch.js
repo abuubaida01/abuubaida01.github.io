@@ -72,7 +72,8 @@ if (USE_GITHUB_DATA === "true") {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestFailed);
+      console.log("*** error ")
+      // throw new Error(ERR.requestFailed  );
     }
 
     res.on("data", d => {
@@ -108,7 +109,8 @@ if (MEDIUM_USERNAME !== undefined) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestMediumFailed);
+      console.log("*** error ")
+      // throw new Error(ERR.requestMediumFailed);
     }
 
     res.on("data", d => {

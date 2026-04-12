@@ -1,16 +1,14 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import { useContext } from "react";
+import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import { greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -25,7 +23,7 @@ export default function Greeting() {
               >
                 <img
                   alt="Abu-Ubaida"
-                  src={require("../../assets/images/personal-pic1.png")}
+                  src={require("../../assets/images/my_image.jpg")}
                   className="my-picture-class"
                 />{" "}
                 {greeting.title}{" "}
@@ -46,8 +44,8 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href="https://app.rezi.ai/s/gVQ0ytCC3Wl1q7TQJIFI"
+                    download="Abu-Ubaida_Resume.pdf"
                     className="download-link-button"
                   >
                     <Button text="Download my resume" />

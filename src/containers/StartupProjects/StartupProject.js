@@ -1,7 +1,7 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { bigProjects } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
@@ -13,7 +13,7 @@ export default function StartupProject() {
     win.focus();
   }
 
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
   }
@@ -43,15 +43,6 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
                   <div className="project-detail">
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
