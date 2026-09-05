@@ -1,69 +1,56 @@
+# Abu Ubaida — Portfolio
 
-## Portfolio Sections
-✔️ Summary and About me\
-✔️ Skills\
-✔️ Education\
-✔️ Work Experience\
-✔️ Open Source Projects Connected with GitHub\
-✔️ Big Projects\
-✔️ Achievements And Certifications 🏆\
-✔️ Blogs\
-✔️ Talks\
-✔️ Podcast\
-✔️ Contact me\
-✔️ Twitter Timeline\
-✔️ GitHub Profile
+A mature, minimalist dark-mode portfolio showcasing Full-Stack & AI engineering work. Built with **Vite + React + TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Lucide**.
 
+## Stack
 
+- Vite + React 18 + TypeScript
+- Tailwind CSS (dark, glassmorphism surfaces)
+- Framer Motion (subtle scroll-triggered reveals)
+- Lucide icons
+- Deployed to GitHub Pages via GitHub Actions
 
-## How To Use 
-
-From your command line, clone and run developerFolio:
+## Development
 
 ```bash
-# Clone this repository
-git clone https://github.com/saadpasta/developerFolio.git
-
-# Go into the repository
-cd developerFolio
-
-# Setup default environment variables
-
-# For Linux
-cp env.example .env
-# For Windows
-copy env.example .env
-
-# Install dependencies
 npm install
-
-# Start a local dev server
-npm start
+npm run dev        # local dev server
 ```
+
+## Production
 
 ```bash
-- DeveloperFolio
-  - node_modules
-  - public
-  - src
-  - .env         <-- create it here
-  - env.example  <-- this is the base file
-  - .gitignore
-  - package-lock.json
-  - package.json
+npm run build      # typecheck + build to dist/
+npm run preview    # serve the production build locally
 ```
 
-2. Inside the .env file, add key `REACT_APP_GITHUB_TOKEN` and assign your GitHub token like this, also add your username as `GITHUB_USERNAME`
+## Deploy
 
-```env
-// .env
-REACT_APP_GITHUB_TOKEN = "YOUR GITHUB TOKEN HERE"
-GITHUB_USERNAME = "YOUR GITHUB USERNAME"
-USE_GITHUB_DATA = "true"
+**Pushing to `master` auto-deploys** — the GitHub Actions workflow
+(`.github/workflows/deploy.yml`) builds and publishes `dist/` to the
+`gh-pages` branch, which GitHub Pages serves.
+
+To deploy manually instead:
+
+```bash
+npm run deploy
 ```
 
+## Structure
 
-# to update the portfolio
-- npm run build
-- npm run deploy
-- npm start 
+```
+src/
+  data/resume.ts      # single source of truth for all content
+  components/          # Nav, Hero, ExperienceTimeline, Projects,
+                       # TechStackGrid, Impact, Contact, Footer
+  App.tsx              # page composition
+  index.css            # Tailwind + theme tokens
+public/
+  Abu-Ubaida-Resume.pdf   # downloadable resume
+  favicon.svg
+```
+
+## Editing Content
+
+All text, experience, projects, skills, recognition, and contact info live in
+`src/data/resume.ts`. Edit there and push to deploy.
