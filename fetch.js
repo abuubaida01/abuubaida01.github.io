@@ -72,7 +72,7 @@ if (USE_GITHUB_DATA === "true") {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      console.log("*** error ")
+      console.log("*** error ");
       // throw new Error(ERR.requestFailed  );
     }
 
@@ -109,7 +109,7 @@ if (MEDIUM_USERNAME !== undefined) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      console.log("*** error ")
+      console.log("*** error ");
       // throw new Error(ERR.requestMediumFailed);
     }
 
