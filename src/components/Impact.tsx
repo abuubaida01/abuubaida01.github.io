@@ -9,7 +9,7 @@ export default function Impact() {
         <Reveal>
           <p className="section-label">04 · Leadership & Recognition</p>
           <h2 className="section-title">Signal Over Noise</h2>
-          <p className="mt-4 max-w-2xl text-slate-400">
+          <p className="mt-4 max-w-2xl text-slate-600 dark:text-slate-400">
             Formal recognition and credentials that validate the work behind the metrics.
           </p>
         </Reveal>
@@ -18,16 +18,16 @@ export default function Impact() {
           {/* Award */}
           <Reveal>
             <div className="glass flex h-full flex-col p-6 sm:p-7">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-amber-400/20 bg-amber-400/[0.06] text-amber-300">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-amber-400/20 bg-amber-400/[0.06] text-amber-600 dark:text-amber-300">
                 <Award className="h-5 w-5" />
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-slate-50">
+              <h3 className="mt-5 text-lg font-semibold text-slate-900 dark:text-slate-50">
                 {recognition.award.title}
               </h3>
               <p className="mt-1 font-mono text-xs text-slate-500">
                 {recognition.award.org} · {recognition.award.date}
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-slate-400">
+              <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
                 {recognition.award.detail}
               </p>
             </div>
@@ -36,10 +36,10 @@ export default function Impact() {
           {/* Degree */}
           <Reveal delay={0.08}>
             <div className="glass flex h-full flex-col p-6 sm:p-7">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-indigo-400/20 bg-indigo-400/[0.06] text-indigo-300">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-indigo-400/20 bg-indigo-400/[0.06] text-indigo-600 dark:text-indigo-300">
                 <GraduationCap className="h-5 w-5" />
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-slate-50">
+              <h3 className="mt-5 text-lg font-semibold text-slate-900 dark:text-slate-50">
                 {recognition.degree.title}
               </h3>
               <p className="mt-1 font-mono text-xs text-slate-500">
@@ -49,7 +49,7 @@ export default function Impact() {
                 {recognition.degree.focus.map((f) => (
                   <span
                     key={f}
-                    className="rounded-md border border-slate-700/60 bg-slate-800/40 px-2 py-1 font-mono text-[11px] text-slate-300"
+                    className="rounded-md border border-slate-300 bg-slate-100 px-2 py-1 font-mono text-[11px] text-slate-600 dark:border-slate-700/60 dark:bg-slate-800/40 dark:text-slate-300"
                   >
                     {f}
                   </span>
@@ -61,15 +61,15 @@ export default function Impact() {
           {/* Certifications */}
           <Reveal delay={0.16}>
             <div className="glass flex h-full flex-col p-6 sm:p-7">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-blue-400/20 bg-blue-400/[0.06] text-blue-300">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-blue-400/20 bg-blue-400/[0.06] text-blue-600 dark:text-blue-300">
                 <BadgeCheck className="h-5 w-5" />
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-slate-50">Certifications</h3>
+              <h3 className="mt-5 text-lg font-semibold text-slate-900 dark:text-slate-50">Certifications</h3>
               <ul className="mt-3 space-y-3">
                 {recognition.certifications.map((c) => (
                   <li key={c.name} className="flex items-start justify-between gap-3">
                     <div>
-                      <p className="text-sm font-medium text-slate-300">{c.name}</p>
+                      <p className="text-sm font-medium text-slate-700 dark:text-slate-300">{c.name}</p>
                       <p className="text-xs text-slate-500">{c.issuer}</p>
                     </div>
                     <span className="shrink-0 font-mono text-[11px] text-slate-500">{c.date}</span>

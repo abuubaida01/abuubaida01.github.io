@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, Mail } from "lucide-react";
 import { metrics, profile } from "../data/resume";
-import avatar from "../assets/images/personal-pic1.png";
+import avatar from "../assets/images/picture.png";
 
 export default function Hero() {
   return (
@@ -20,20 +20,20 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              <span className="text-xs font-medium text-emerald-300">{profile.availability}</span>
+              <span className="text-xs font-medium text-emerald-600 dark:text-emerald-300">{profile.availability}</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="mt-6 text-4xl font-bold leading-[1.12] tracking-tight text-slate-50 sm:text-5xl lg:text-[3.4rem]"
+              className="mt-6 text-4xl font-bold leading-[1.12] tracking-tight text-slate-900 dark:text-slate-50 sm:text-5xl lg:text-[3.4rem]"
             >
               {profile.headline.split(" and agentic workflows.")[0]}
               <span className="whitespace-nowrap">
                 {" "}
                 and{" "}
-                <span className="bg-gradient-to-r from-indigo-400 to-blue-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent dark:from-indigo-400 dark:to-blue-400">
                   agentic workflows.
                 </span>
               </span>
@@ -43,7 +43,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-6 max-w-xl text-lg leading-relaxed text-slate-400"
+              className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-400"
             >
               {profile.subheadline}
             </motion.p>
@@ -63,7 +63,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-white/[0.02] px-5 py-2.5 text-sm font-medium text-slate-200 transition-colors duration-200 hover:border-slate-500 hover:bg-white/[0.05]"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors duration-200 hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-white/[0.02] dark:text-slate-200 dark:hover:border-slate-500 dark:hover:bg-white/[0.05]"
               >
                 <Mail className="h-4 w-4" />
                 Get In Touch
@@ -72,7 +72,7 @@ export default function Hero() {
                 href={profile.links.github}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1 px-2 py-2.5 text-sm font-medium text-slate-400 transition-colors hover:text-slate-100"
+                className="inline-flex items-center gap-1 px-2 py-2.5 text-sm font-medium text-slate-500 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
               >
                 GitHub
                 <ArrowUpRight className="h-4 w-4" />
@@ -94,14 +94,14 @@ export default function Hero() {
                 alt={`${profile.name} — Portfolio avatar`}
                 width={340}
                 height={340}
-                className="relative rounded-full border border-slate-700/60 object-cover"
+                className="relative rounded-full border border-slate-300 object-cover dark:border-slate-700/60"
                 loading="eager"
               />
-              <div className="absolute -right-2 top-8 rounded-lg border border-slate-700/60 bg-ink/90 px-3 py-2 font-mono text-[11px] text-slate-300 backdrop-blur">
-                <span className="text-indigo-400">$</span> python -m build_ai
+              <div className="absolute -right-2 top-8 rounded-lg border border-slate-300 bg-white/90 px-3 py-2 font-mono text-[11px] text-slate-500 backdrop-blur dark:border-slate-700/60 dark:bg-ink/90 dark:text-slate-300">
+                <span className="text-indigo-600 dark:text-indigo-400">$</span> python -m build_ai
               </div>
-              <div className="absolute -left-4 bottom-10 rounded-lg border border-slate-700/60 bg-ink/90 px-3 py-2 font-mono text-[11px] text-slate-300 backdrop-blur">
-                <span className="text-emerald-400">✓</span> prod.healthy
+              <div className="absolute -left-4 bottom-10 rounded-lg border border-slate-300 bg-white/90 px-3 py-2 font-mono text-[11px] text-slate-500 backdrop-blur dark:border-slate-700/60 dark:bg-ink/90 dark:text-slate-300">
+                <span className="text-emerald-600 dark:text-emerald-400">✓</span> prod.healthy
               </div>
             </div>
           </motion.div>
@@ -116,7 +116,7 @@ export default function Hero() {
         >
           {metrics.map((m) => (
             <div key={m.label} className="glass p-5">
-              <div className="font-mono text-3xl font-semibold text-slate-50">{m.value}</div>
+              <div className="font-mono text-3xl font-semibold text-slate-900 dark:text-slate-50">{m.value}</div>
               <div className="mt-1 text-xs uppercase tracking-wider text-slate-500">{m.label}</div>
             </div>
           ))}

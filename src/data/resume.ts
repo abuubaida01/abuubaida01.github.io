@@ -14,7 +14,7 @@ export const profile = {
     github: "https://github.com/abuubaida01",
     linkedin: "https://www.linkedin.com/in/abuubaidaaz",
     twitter: "https://twitter.com/abuubaidaaz",
-    resume: "/Abu-Ubaida-Resume.pdf",
+    resume: "https://app.rezi.ai/s/2NDjJjHlGxWjN2USY6bP",
   },
 };
 
