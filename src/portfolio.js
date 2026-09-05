@@ -18,10 +18,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Abu-Ubaida",
-  title: "Hi, I'm Abu-Ubaida",
+  username: "Abu Ubaida",
+  title: "Abu Ubaida",
   subTitle: emoji(
-    "Full-stack software engineer with 2.5+ years of experience architecting AI-powered platforms and enterprise systems at scale. Proven track record of reducing operational overhead by 80%+ through intelligent automation, resilient distributed architectures, and seamless user experiences."
+    "Senior Full-Stack Software & AI Engineer with 3+ years of experience architecting scalable backend applications, microservices, and AI-powered products. Promoted twice in under three years—from Junior to Senior Software Engineer. I specialize in Python (FastAPI, Django), cloud-native AWS infrastructure, and building intelligent, high-performance systems that ship measurable business impact."
   ),
   resumeLink: "#",
   displayGreeting: true
@@ -37,30 +37,31 @@ const socialMediaLinks = {
 
 // Skills Section
 const skillsSection = {
-  title: "What I do",
-  subTitle: "FULL-STACK SOFTWARE ENGINEER | AI INTEGRATION EXPERT | CLOUD ARCHITECT",
+  title: "What I Do",
+  subTitle:
+    "SENIOR FULL-STACK ENGINEER | AI SYSTEMS ARCHITECT | CLOUD INFRASTRUCTURE EXPERT",
   skills: [
     emoji(
-      "⚡ Architect robust RESTful and GraphQL APIs using Python (FastAPI, Django) to power mission-critical enterprise applications and automated workflows."
+      "⚡ Architect scalable microservices and high-performance RESTful/GraphQL APIs with Python (FastAPI, Django, Celery) powering mission-critical enterprise platforms."
     ),
     emoji(
-      "⚡ Build dynamic, responsive, and high-performance frontends with Next.js, React, and modern state management (Zustand)."
+      "⚡ Design and deploy serverless cloud architectures (AWS Lambda, EC2, S3, API Gateway) that eliminate operational overhead and slash infrastructure costs."
     ),
     emoji(
-      "⚡ Design and implement Agentic AI solutions (RAG, LangGraph, ADK, FastMCP) to automate complex processes and enhance user experiences."
+      "⚡ Engineer production-grade Agentic AI systems (RAG, LangGraph, ADK, Vertex AI, FastMCP) that automate complex workflows and deliver measurable efficiency gains."
     ),
     emoji(
-      "⚡ Deploy containerized applications using Docker and orchestrate automated CI/CD pipelines via GitHub Actions on AWS infrastructure."
+      "⚡ Build responsive, high-performance frontends with React, Next.js, and Tailwind CSS, containerized with Docker and automated via GitHub Actions CI/CD."
     )
   ],
 
   softwareSkills: [
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "React / Next.js", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
-    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
-    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "Git", fontAwesomeClassname: "fab fa-git" }
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "React / Next.js", fontAwesomeClassname: "fab fa-react"},
+    {skillName: "AWS", fontAwesomeClassname: "fab fa-aws"},
+    {skillName: "Docker", fontAwesomeClassname: "fab fa-docker"},
+    {skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git"}
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -70,11 +71,13 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Umaer Basha Institute of Technology (UBIT), University of Karachi",
+      schoolName: "University of Karachi (UBIT)",
       logo: require("./assets/images/ubit.jpeg"),
-      subHeader: "Bachelor in Software Engineering (BSSE)",
-      duration: "Completed in 2024",
-      descBullets: ["Graduated with a focus on Software Architecture, Modern Web Technologies, and Data Engineering."]
+      subHeader: "BS in Software Engineering (EQF Level 6)",
+      duration: "Completed in 2024 · GPA 3.1/4.0",
+      descBullets: [
+        "Key Focus Areas: Software Engineering Principles, Distributed Systems, Data Structures, Software Design, Capstone Project."
+      ]
     }
   ]
 };
@@ -83,12 +86,27 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    { Stack: "Python, FastAPI & Django", progressPercentage: "95%" },
-    { Stack: "AI Engineering (RAG, LLMs, LangGraph, ADK)", progressPercentage: "85%" },
-    { Stack: "Frontend (React.js, Next.js, Tailwind)", progressPercentage: "80%" },
-    { Stack: "Databases (PostgreSQL, MongoDB, Redis)", progressPercentage: "90%" },
-    { Stack: "Cloud Platforms (AWS, GCP) & DevOps (Docker, CI/CD)", progressPercentage: "85%" },
-    { Stack: "System Architecture & API Design", progressPercentage: "90%" }
+    {Stack: "Python, FastAPI, Django & DRF", progressPercentage: "95%"},
+    {
+      Stack: "AI & LLMs (RAG, ADK, LangChain, LangGraph, Vertex AI)",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Databases (PostgreSQL, Redis, MongoDB, Pinecone)",
+      progressPercentage: "92%"
+    },
+    {
+      Stack: "AWS, GCP & DevOps (Docker, Lambda, CI/CD)",
+      progressPercentage: "88%"
+    },
+    {
+      Stack: "System Design & Distributed Architectures",
+      progressPercentage: "87%"
+    },
+    {
+      Stack: "Frontend (React.js, Next.js, Tailwind CSS)",
+      progressPercentage: "82%"
+    }
   ],
   displayCodersrank: false
 };
@@ -98,30 +116,43 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Smartbenefits.pk",
+      role: "Senior Software Engineer",
+      company: "Smartbenefits",
       companylogo: require("./assets/images/smartbenefits.png"),
-      date: "January 2025 – Present",
-      desc: "Promoted to lead the development of enterprise-scale HR and insurance platforms supporting 20,000+ employees. I architected 'Hemaayah', Pakistan's first remittance-linked health insurance product with WhatsApp Botpress integration.",
+      date: "July 2026 – Present",
+      desc: "Architecting scalable data pipelines, serverless systems, and AI-powered features for enterprise HR and insurance platforms serving 600+ enterprise clients.",
       descBullets: [
-        "Led end-to-end development of three platforms (Partner Portal, Ops Portal, Customer Website) from scratch for Hemaayah.",
-        "Engineered multi-agentic AI chatbots (Vertex AI, WebSocket) resolving 1,000+ monthly medical queries with 85%+ accuracy.",
-        "Built self-updating AI agents to automatically enrich the medical knowledge corpus on every OPD claim settlement, maintaining an always-current AI base with zero engineering intervention.",
-        "Shipped 'Send Login Invite' and 'Upload Monthly PF Contribution' features with background task processing, driving measurable platform adoption and eliminating manual file tracking.",
-        "Integrated webhook APIs with Qatar-based enterprises (Vodafone, Ompay) and Bank of Punjab Exchange for fully automated health policy delivery to Pakistani families."
+        "Architected a nightly Celery-scheduled Lambda analytics pipeline running complex SQL against a read-only replica—cut dashboard load times from ~15 minutes to under 10ms with zero production database load.",
+        "Cut LLM token usage 80% (7,800 → 1,500 tokens/client) by restructuring raw query output into a compact delta array before inference on AI-generated chart insights.",
+        "Built an automated JSON export pipeline to Amazon S3 with a cached API (1-hour TTL) powering interactive charts in the HR Portal.",
+        "Mentored 2 junior engineers, instituting PR standards and structured code reviews that reduced review cycle time."
+      ]
+    },
+    {
+      role: "Software Engineer",
+      company: "Smartbenefits",
+      companylogo: require("./assets/images/smartbenefits.png"),
+      date: "January 2025 – July 2026",
+      desc: "Primary technical lead for enterprise client integrations and AI system architecture, driving measurable automation and infrastructure cost reduction.",
+      descBullets: [
+        "Architected a serverless microservices system (AWS Lambda)—eliminated recurring memory spikes and freed capacity for primary workloads.",
+        "Built a multi-agent AI chatbot (Vertex AI, ADK, WebSocket) resolving 1,000+ monthly medical queries at 85%+ accuracy.",
+        "Led end-to-end architecture of Hemaayah, Pakistan's first remittance-linked health insurance product—built 3 platforms from scratch.",
+        "Cut infrastructure costs by migrating all heavy cron jobs to AWS Lambda significantly reducing monthly compute spend.",
+        "Reduced HR team workload by 30% through in-portal OPD claims submission and Celery-based automated onboarding/offboarding."
       ]
     },
     {
       role: "Junior Software Engineer",
-      company: "Smartbenefits.pk",
+      company: "Smartbenefits",
       companylogo: require("./assets/images/smartbenefits.png"),
-      date: "January 2024 – December 2024",
-      desc: "Spearheaded automation and system optimization for a portal supporting 400+ corporate clients, dramatically reducing manual workload through Celery background jobs.",
+      date: "January 2024 – January 2025",
+      desc: "Built automation features and real-time systems for a portal supporting 400+ corporate clients.",
       descBullets: [
-        "Automated quarterly utilization reporting and policy expiry notifications, eliminating 20+ hours/week of manual work.",
-        "Developed Provident Fund Management Feature for real-time tracking of dividends and fund growth.",
-        "Developed a doctor chat feature in collaboration with NoorCare, driving over 500 prescription chats per week.",
-        "Implemented a scalable feedback feature prompting users post claim-settlement, yielding over 1,000 weekly feedback responses."
+        "Automated quarterly utilization reporting and policy expiry notifications, eliminating 20+ hours/week of manual HR effort.",
+        "Built the Provident Fund Management feature enabling real-time dividend and fund-growth tracking for employees.",
+        "Delivered a doctor chat feature in partnership with NoorCare—driving 500+ chats/week.",
+        "Built a customizable feedback questionnaire tool generating 1,000+ weekly responses for customer-sentiment data."
       ]
     }
   ]
@@ -136,28 +167,20 @@ const openSource = {
 // Some big projects you have worked on
 const bigProjects = {
   title: "Key Projects",
-  subtitle: "Showcasing my expertise in building scalable platforms, from concept to deployment.",
+  subtitle:
+    "Selected work demonstrating my ability to ship production-grade platforms—from concept through to scalable, cloud-native deployment.",
   projects: [
     {
-      projectName: "School Management System",
-      projectDesc: "A high-performance School Management platform streamlining operations for admins, teachers, and students. Designed a secure, role-based architecture leveraging FastAPI, GraphQL, Next.js, OAuth2/JWT, and SQLAlchemy. Validated state management with Zustand, containerized via Docker, automated by GitHub Actions CI/CD, and deployed to AWS EC2.",
-      footerLink: [
-        { name: "Visit Website", url: "https://smsb.addazakat.com/docs" }
-      ]
-    },
-    {
-      projectName: "Event Registration System",
-      projectDesc: "A FastAPI-based event system processing 8,000+ attendees monthly. Features automated QR code generation, email distribution, and real-time reporting via Google Sheets/Drive APIs. Engineered a fully automated CI/CD pipeline and deployed the infrastructure on AWS.",
-      footerLink: [
-        { name: "View Source", url: "https://github.com/abuubaida01/event-management-system" }
-      ]
+      projectName: "FeesDay",
+      projectDesc:
+        "A B2B SaaS platform automating recurring-fee collection and payment reminders via a modular FastAPI backend and PostgreSQL managed with SQLAlchemy. Migrated the reminder engine from a single in-process APScheduler instance to a decoupled serverless architecture (Celery → SQS → AWS Lambda → API Gateway), enabling the system to handle 1M+ requests with millisecond response times at a fraction of the prior compute cost. Implemented secure JWT-based authentication with refresh-token rotation, asynchronous webhook handlers, and a bulk data-import pipeline.",
+      footerLink: [{name: "Visit Website", url: "https://feesday.netlify.app/"}]
     },
     {
       projectName: "AddaZakat",
-      projectDesc: "A social impact platform connecting global donors with verified seekers. Architected a full-stack solution using Django/FastAPI backend (Service-Oriented Architecture via Microservices) and Next.js frontend, deployed on AWS. Pioneered conversational AI-powered post creation using LangGraph.",
-      footerLink: [
-        { name: "Visit Website", url: "https://addazakat.com/" }
-      ]
+      projectDesc:
+        "A social impact platform connecting global donors with verified seekers like needy families and NGOs. Architected a full-stack Service-Oriented Architecture (Django, FastAPI, Next.js) with real-time chat and notification systems. Integrated a conversational AI assistant using LangGraph and MCP Server to help users articulate and publish need-based stories. Scaled AWS infrastructure (EC2, S3, Amplify) to support 3,000+ monthly visitors and 17,000+ views within a 90-day period.",
+      footerLink: [{name: "Visit Website", url: "https://addazakat.com"}]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -166,28 +189,36 @@ const bigProjects = {
 // Achievement Section
 // Include certificates, talks etc
 const achievementSection = {
-  title: emoji("Awards & Certifications 🏆"),
-  subtitle: "Recognitions and formal learning that validate my expertise.",
+  title: emoji("Awards & Certifications"),
+  subtitle:
+    "Professional recognitions and formal certifications validating my technical expertise.",
   achievementsCards: [
     {
       title: "Breakout Performer Award",
-      subtitle: "Smartbenefits (2026)",
-      image: require("./assets/images/my_image.jpg"),
+      subtitle: "Smartbenefits · March 2026",
+      image: require("./assets/images/picture.png"),
       imageAlt: "Breakout Performer Award",
       footerLink: []
     },
     {
+      title: "LLM Engineering, RAG and AI Agents",
+      subtitle: "Udemy · April 2026",
+      image: require("./assets/images/picture.png"),
+      imageAlt: "LLM Engineering Certification",
+      footerLink: []
+    },
+    {
       title: "FastAPI Full Stack Mastery",
-      subtitle: "Certification",
-      image: require("./assets/images/my_image.jpg"),
+      subtitle: "Udemy · November 2025",
+      image: require("./assets/images/picture.png"),
       imageAlt: "FastAPI Certification",
       footerLink: []
     },
     {
-      title: "Python Problem-solving",
-      subtitle: "HackerRank Certification",
-      image: require("./assets/images/my_image.jpg"),
-      imageAlt: "HackerRank Certification",
+      title: "Problem Solving (Advanced)",
+      subtitle: "HackerRank · July 2024",
+      image: require("./assets/images/picture.png"),
+      imageAlt: "HackerRank Problem Solving Certification",
       footerLink: []
     }
   ],
@@ -217,8 +248,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  title: emoji("Contact Me"),
+  subtitle:
+    "Have a project in mind or want to discuss an opportunity? My inbox is always open.",
   number: "+92-331-2371338",
   email_address: "abuubaida901@gmail.com"
 };

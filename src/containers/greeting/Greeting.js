@@ -1,14 +1,14 @@
-import { useContext } from "react";
-import { Fade } from "react-reveal";
+import {useContext} from "react";
+import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
+import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -22,8 +22,8 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 <img
-                  alt="Abu-Ubaida"
-                  src={require("../../assets/images/my_image.jpg")}
+                  alt="Abu Ubaida"
+                  src={require("../../assets/images/picture.png")}
                   className="my-picture-class"
                 />{" "}
                 {greeting.title}{" "}
