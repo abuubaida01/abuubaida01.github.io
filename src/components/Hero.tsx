@@ -97,12 +97,6 @@ export default function Hero() {
                 className="relative rounded-full border border-slate-300 object-cover dark:border-slate-700/60"
                 loading="eager"
               />
-              <div className="absolute -right-2 top-8 rounded-lg border border-slate-300 bg-white/90 px-3 py-2 font-mono text-[11px] text-slate-500 backdrop-blur dark:border-slate-700/60 dark:bg-ink/90 dark:text-slate-300">
-                <span className="text-indigo-600 dark:text-indigo-400">$</span> python -m build_ai
-              </div>
-              <div className="absolute -left-4 bottom-10 rounded-lg border border-slate-300 bg-white/90 px-3 py-2 font-mono text-[11px] text-slate-500 backdrop-blur dark:border-slate-700/60 dark:bg-ink/90 dark:text-slate-300">
-                <span className="text-emerald-600 dark:text-emerald-400">✓</span> prod.healthy
-              </div>
             </div>
           </motion.div>
         </div>
