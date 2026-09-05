@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.e6513a0a.css",
-    "main.js": "/static/js/main.df6e0305.js",
+    "main.js": "/static/js/main.30ef6d2e.js",
     "static/css/64.563f446a.chunk.css": "/static/css/64.563f446a.chunk.css",
     "static/js/64.c337433a.chunk.js": "/static/js/64.c337433a.chunk.js",
     "static/css/769.4f346287.chunk.css": "/static/css/769.4f346287.chunk.css",
     "static/js/769.5c520926.chunk.js": "/static/js/769.5c520926.chunk.js",
+    "static/media/picture.png": "/static/media/picture.4d130b471186cb8bab9a.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/my_image.jpg": "/static/media/my_image.5d3e5807f1c1cd21d54d.jpg",
     "static/media/smartbenefits.png": "/static/media/smartbenefits.ba6f059ade3b410672c3.png",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
@@ -17,7 +17,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.e6513a0a.css.map": "/static/css/main.e6513a0a.css.map",
-    "main.df6e0305.js.map": "/static/js/main.df6e0305.js.map",
+    "main.30ef6d2e.js.map": "/static/js/main.30ef6d2e.js.map",
     "64.563f446a.chunk.css.map": "/static/css/64.563f446a.chunk.css.map",
     "64.c337433a.chunk.js.map": "/static/js/64.c337433a.chunk.js.map",
     "769.4f346287.chunk.css.map": "/static/css/769.4f346287.chunk.css.map",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.e6513a0a.css",
-    "static/js/main.df6e0305.js"
+    "static/js/main.30ef6d2e.js"
   ]
 }
