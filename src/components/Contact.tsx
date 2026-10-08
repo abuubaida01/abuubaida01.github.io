@@ -54,7 +54,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-wider text-slate-500">Email</p>
-                  <p className="text-sm font-medium text-slate-800 dark:text-slate-200">{profile.email}</p>
+                  <p className="text-sm font-medium text-slate-800 dark:text-slate-200">
+                    {profile.email}
+                  </p>
                 </div>
               </div>
 
@@ -91,12 +93,16 @@ export default function Contact() {
               <div className="mt-auto pt-6">
                 <div className="rounded-lg border border-slate-200 bg-white/60 p-4 font-mono text-xs leading-relaxed text-slate-500 dark:border-slate-800/70 dark:bg-ink/60 dark:text-slate-400">
                   <div>
-                    <span className="text-slate-400 dark:text-slate-600">{"// "}</span>open to Full-Stack & AI roles
+                    <span className="text-slate-400 dark:text-slate-600">{"// "}</span>open to
+                    Full-Stack & AI roles
                   </div>
                   <div>
                     <span className="text-indigo-600 dark:text-indigo-400">const</span>{" "}
                     <span className="text-slate-800 dark:text-slate-200">status</span> ={" "}
-                    <span className="text-emerald-600 dark:text-emerald-400">'actively interviewing'</span>;
+                    <span className="text-emerald-600 dark:text-emerald-400">
+                      'actively interviewing'
+                    </span>
+                    ;
                   </div>
                 </div>
               </div>

@@ -31,14 +31,19 @@ export default function ExperienceTimeline() {
                       </h3>
                       <span className="font-mono text-xs text-slate-500">{role.period}</span>
                     </div>
-                    <p className="mt-1 text-sm font-medium text-indigo-700 dark:text-indigo-300">{role.company}</p>
+                    <p className="mt-1 text-sm font-medium text-indigo-700 dark:text-indigo-300">
+                      {role.company}
+                    </p>
                     <p className="mt-0.5 flex items-center gap-1 text-xs text-slate-500">
                       <MapPin className="h-3 w-3" /> {role.location}
                     </p>
 
                     <ul className="mt-4 space-y-2.5">
                       {role.highlights.map((h) => (
-                        <li key={h} className="flex gap-2.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        <li
+                          key={h}
+                          className="flex gap-2.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400"
+                        >
                           <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-indigo-600 dark:bg-indigo-400" />
                           <span>{h}</span>
                         </li>

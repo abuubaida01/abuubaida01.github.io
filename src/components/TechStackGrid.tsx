@@ -27,7 +27,9 @@ export default function TechStackGrid() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-white/60 text-indigo-600 dark:border-slate-700/60 dark:bg-ink/60 dark:text-indigo-400">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="mt-5 text-base font-semibold text-slate-900 dark:text-slate-50">{group.title}</h3>
+                  <h3 className="mt-5 text-base font-semibold text-slate-900 dark:text-slate-50">
+                    {group.title}
+                  </h3>
                   <p className="mt-1 text-xs text-slate-500">{group.blurb}</p>
                   <div className="mt-4 flex flex-wrap gap-1.5">
                     {group.skills.map((skill) => (

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowUpRight, Mail } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download, Mail } from "lucide-react";
 import { metrics, profile } from "../data/resume";
 import avatar from "../assets/images/picture.png";
 
@@ -20,7 +20,9 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              <span className="text-xs font-medium text-emerald-600 dark:text-emerald-300">{profile.availability}</span>
+              <span className="text-xs font-medium text-emerald-600 dark:text-emerald-300">
+                {profile.availability}
+              </span>
             </motion.div>
 
             <motion.h1
@@ -60,6 +62,14 @@ export default function Hero() {
               >
                 View Featured Work
                 <ArrowDown className="h-4 w-4" />
+              </a>
+              <a
+                href={profile.links.resume}
+                download="Abu-Ubaida-Resume.pdf"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors duration-200 hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-white/[0.02] dark:text-slate-200 dark:hover:border-slate-500 dark:hover:bg-white/[0.05]"
+              >
+                <Download className="h-4 w-4" />
+                Download CV
               </a>
               <a
                 href="#contact"
@@ -110,7 +120,9 @@ export default function Hero() {
         >
           {metrics.map((m) => (
             <div key={m.label} className="glass p-5">
-              <div className="font-mono text-3xl font-semibold text-slate-900 dark:text-slate-50">{m.value}</div>
+              <div className="font-mono text-3xl font-semibold text-slate-900 dark:text-slate-50">
+                {m.value}
+              </div>
               <div className="mt-1 text-xs uppercase tracking-wider text-slate-500">{m.label}</div>
             </div>
           ))}

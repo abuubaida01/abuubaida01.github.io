@@ -64,12 +64,16 @@ export default function Impact() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-blue-400/20 bg-blue-400/[0.06] text-blue-600 dark:text-blue-300">
                 <BadgeCheck className="h-5 w-5" />
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-slate-900 dark:text-slate-50">Certifications</h3>
+              <h3 className="mt-5 text-lg font-semibold text-slate-900 dark:text-slate-50">
+                Certifications
+              </h3>
               <ul className="mt-3 space-y-3">
                 {recognition.certifications.map((c) => (
                   <li key={c.name} className="flex items-start justify-between gap-3">
                     <div>
-                      <p className="text-sm font-medium text-slate-700 dark:text-slate-300">{c.name}</p>
+                      <p className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                        {c.name}
+                      </p>
                       <p className="text-xs text-slate-500">{c.issuer}</p>
                     </div>
                     <span className="shrink-0 font-mono text-[11px] text-slate-500">{c.date}</span>

@@ -1,96 +1,74 @@
-Abu Ubaida
-Karachi, Pakistan abuubaida901@gmail.com (+92)3312371338 in/abuubaidaaz abuubaida01.github.io/
-SUMMARY
-Results-driven Full-Stack Software & AI Engineer with 3 years of experience architecting scalable backend applications, microservices, and AI-
-powered products. Promoted twice in under three years (Junior Software Engineer to Senior Software Engineer). Expert in Python (FastAPI,
-Django) with a track record of optimizing system performance, cutting manual workflows, and shipping high-performance APIs. Skilled in
-database design (PostgreSQL, Redis), AWS cloud infrastructure, and frontend integration with React/Next.js.
-EXPERIENCE
-Senior Software Engineer
-Smartbenefits July 2026 - Present Karachi, Pakistan
-,
-• Architected a nightly Celery-scheduled Lambda analytics pipeline running complex SQL against a read-only replica to pre-compute usage
-statistics for 600+ enterprise clients, publishing results to S3 as client-specific JSON — cut dashboard load times from ~15 minutes to under
-10ms with zero production database load.
-• Cut LLM token usage 80% (7,800 → 1,500 tokens/client) for AI-generated chart insights by restructuring raw query output into a compact
-delta array before inference — scoped to the 2 charts that need AI, across 600+ nightly dashboard refreshes.
-• Built an automated JSON export pipeline to Amazon S3 with a cached API (1-hour TTL) powering interactive charts in the HR Portal — cut data
-latency for the Sales team during plan renewals and directly supported renewal conversations with real-time data.
-• Mentored 2 junior engineers, instituting PR standards and structured code reviews that reduced review cycle time and improved code
-consistency across the team.
-Software Engineer
-Smartbenefits January 2025 - July 2026 Karachi, Pakistan
-,
-• Served as the primary technical point of contact for enterprise clients via Google Meet, resolving integration issues on secure client networks
-and protecting account retention during onboarding.
-• Architected a serverless microservices system (AWS Lambda) to offload bulk exports, cron jobs, and heavy I/O — eliminated recurring
-memory spikes on the core application and freed capacity for primary workloads.
-• Cut infrastructure costs by migrating all heavy cron jobs to AWS Lambda, reducing core server load and monthly compute spend.
-• Shipped Send Login Invite and Upload Monthly PF Contribution (with background task processing) — drove dependent onboarding adoption
-and eliminated manual HR file tracking for PF workflows.
-• Built a multi-agent AI chatbot (Vertex AI, ADK, WebSocket) resolving 1,000+ monthly medical queries at 85%+ accuracy, cutting dependency
-on human support staff; designed self-updating agents that auto-enrich the knowledge base on every OPD claim settlement — a zero-
-maintenance AI knowledge system.
-• Led end-to-end architecture of Hemaayah, Pakistan's first remittance-linked health insurance product — built 3 platforms (Partner Portal, Ops
-Portal, Customer Website) from scratch with WhatsApp-based policy issuance (Botpress) and webhook integrations (Vodafone Qatar, Ompay,
-Bank of Punjab Exchange), enabling fully automated, zero-touch policy delivery on every qualifying remittance.
-• Built an automated Quarterly Benefits Usage Report system (IPD, OPD, Cashless Medicine, Doctor Chat, Discounts) via cron jobs — delivered
-actionable insights to 1,000+ HR professionals four times a year and eliminated all manual reporting effort.
-• Reduced HR team workload by 30% by building in-portal OPD claims submission on behalf of employees; cut operational overhead further with
-Celery-based automated onboarding/offboarding.
-• Shipped a branch-level oversight dashboard giving multi-location enterprises real-time visibility into HR operations and benefits utilization —
-supported faster, data-backed decisions across branches; paired with a quarterly NPS system used to track and act on client satisfaction trends.
-Junior Software Engineer
-Smartbenefits January 2024 - January 2025 Karachi, Pakistan
-,
-• Automated quarterly utilization reporting and policy expiry notifications for 400+ corporate clients via Celery background jobs, eliminating
-20+ hours/week of manual HR effort.
-• Built the Provident Fund Management feature enabling real-time dividend and fund-growth tracking for employees — improved transparency
-and reduced PF-related support queries.
-• Delivered a doctor chat feature in partnership with NoorCare, letting users consult doctors and receive prescriptions in-app — drove 500+
-chats/week, expanding platform engagement beyond core insurance use.
-• Built a customizable feedback questionnaire tool for marketing, triggered post-claim-settlement — generated 1,000+ weekly responses,
-giving the company continuous customer-sentiment data.
-EDUCATION
-BS in Software Engineering (EQF Level 6)
+# Abu Ubaida
+Karachi, Pakistan • abuubaida901@gmail.com • +92 3312371338 • English (Fluent) • linkedin.com/in/abuubaidaaz • abuubaida01.github.io/
+
+## SUMMARY
+Senior Software Engineer with nearly 3 years building production AI features for a SaaS platform serving 600+ enterprise clients. Hands-on with agentic AI, MCP servers, RAG, function calling and prompt engineering, plus AWS-based automation and backend/API integrations. Owning AI solutions end to end, from design to production and handover.
+
+## EXPERIENCE
+
+### Senior Software Engineer
+**Smartbenefits** — *July 2026 - Present, Karachi, Pakistan*
+- Migrated long-running third-party insurer data-sync jobs from Django-Celery to AWS Step Functions scheduled via Amazon EventBridge, running as a single workflow of about 9 hours. This reduced AWS EC2 costs and improved server availability.
+- Architected a nightly Lambda analytics pipeline (Celery-scheduled) that runs complex SQL against a read-only replica to pre-compute usage statistics for 600+ enterprise clients and publishes client-specific JSON to Amazon S3. Dashboard load times fell from about 5 minutes to under 2 minutes with zero production database load. This gave the Sales team real-time data during plan renewals and directly supported renewal conversations.
+- Reduced LLM token usage by 80% (7,800 to 1,500 tokens per client) by restructuring raw query output into a compact delta array before inference. This covered AI-generated chart insights across 600+ nightly dashboard refreshes.
+- Introduced Claude Code with spec-driven development and PR review standards across the engineering team, taking features from requirements to tested, reviewed PRs with agent assistance; mentored 2 junior engineers and improved code consistency.
+
+### Software Engineer
+**Smartbenefits** — *January 2025 - July 2026, Karachi, Pakistan*
+- Built a multi-agent medical-query chatbot (Vertex AI, Google ADK, WebSocket) handling 1,000+ queries per month at 75%+ accuracy, reducing dependency on human support staff.
+- Built 5 MCP tools on the Django backend with FastMCP and connected it to the Vertex AI agents via function calling. The tools serve the latest knowledge-base content and client-specific policy PDFs, which grounded answers in live data and improved accuracy and source citations (75% -> 85% on internal evaluation).
+- Built an end-to-end document-intelligence RAG system for handwritten receipts and technical PDFs: benchmarked traditional OCR (TrOCR, AWS Textract, Qwen-OCR) against vision-language models (Gemma-3, Llama-3.2-Vision), selected Gemma-3-4b-it for the best quality/speed trade-off, then embedded and chunked the extracted text into Pinecone and exposed retrieval to an LLM agent through function calling, with prompt-engineered system instructions that ground answers in retrieved context, served via a FastAPI chat interface.
+- Architected a serverless layer on AWS Lambda for bulk exports, cron jobs and heavy I/O, eliminating recurring memory spikes on the core Django application and reducing monthly compute spend and server loads.
+- Built in-portal OPD claim submission and Celery-based automated onboarding/offboarding, cutting HR team workload by 30%.
+- Shipped a branch-level oversight dashboard, a Send Login Invite flow and a monthly PF contribution upload (background-task processing), giving multi-location clients real-time visibility into benefits utilization and removing manual HR tracking.
+
+### Junior Software Engineer
+**Smartbenefits** — *January 2024 - January 2025, Karachi, Pakistan*
+- Built an automated Quarterly Benefits Usage Report system (IPD, OPD, Cashless Medicine, Doctor Chat, Discounts) via cron jobs, delivering insights to 1,000+ HR professionals four times a year and removing manual reporting effort.
+- Built the Provident Fund Management feature for real-time dividend and fund-growth tracking, improving transparency and reducing PF-related support queries.
+- Delivered an in-app doctor chat feature in partnership with NoorCare (consultations and prescriptions), driving 500+ chats per week.
+- Built a customizable post-claim feedback questionnaire tool for the marketing team, generating 1,000+ weekly responses and continuous customer-sentiment data.
+- Served as the primary technical contact for enterprise clients in working sessions, resolving integration issues on secure client networks and protecting account retention during onboarding. Collaborated with product, ops and support teams to ship these features.
+
+## EDUCATION
+**BS in Software Engineering**
 University of Karachi (UBIT) • Karachi, Pakistan • 2024 • GPA 3.1/4.0
-• Key Focus Areas: Software Engineering Principles, Distributed Systems, Data Structures, Software Design, Capstone Project.
-PROJECT
-FeesDay (B2B SaaS Platform)
-Feesday • feesday.com • January 2026 - Present
-• Automate fee collection with email and WhatsApp reminders
-• Designed and built Feesday, a B2B SaaS platform automating recurring-fee collection and payment reminders via a modular FastAPI backend and
-PostgreSQL database managed with SQLAlchemy.
-• Migrated the reminder engine from a single in-process APScheduler instance to a decoupled serverless architecture (Celery scheduling →
-SQS → AWS Lambda → API Gateway), isolating WhatsApp messaging from the core API — enabling the system to reliably handle 1M+ requests
-with millisecond response times at a fraction of the prior compute cost.
-• Implemented secure JWT-based authentication (including refresh-token rotation), asynchronous webhook handlers for real-time delivery
-tracking, and a bulk data-import pipeline accepting validated Excel/CSV customer uploads.
-AddaZakat (Social Impact Platform)
-addazakat.com • addazakat.com • January 2024 - Present
-• It connects donors worldwide with verified seekers like needy families and NGOs.
-• Architected a full-stack Service-Oriented Architecture (Django, FastAPI, Next.js) connecting global donors with verified NGOs, featuring real-time
-chat and notification systems.
-• Integrated a conversational Al assistant using LangGraph and MCP Server to help users articulate and publish detailed need-based stories.
-• Optimized SEO and scaled AWS infrastructure (EC2, S3, Amplify) to support platform growth, achieving 3,000+ monthly visitors and 17,000+ views
-within a 90-day period.
-SKILLS
-Languages & Frameworks: Python, Django, FastAPI, SQLAlchemy, Alembic, Celery, Django REST Framework, Pytest, GraphQL
-AI & LLMs: RAG, Agent Development Kit (ADK), LangChain, LangGraph, LLM Models, FastMCP , Claude Code, Vertex AI, CrewAI, Scikit-learn
-Databases: PostgreSQL, MySQL, Redis (Cache), Pinecone (Vector DB), MongoDB, vector databases, Data preparation, Data processing
-Cloud, DevOps & Tools: AWS (EC2, S3, Amplify), GCP , Docker, Git, Cloudflare, GitHub Actions, WhatsApp API, Google Sheets API, Payment
-Gateways
-Architecture: System Design, Parallel Processing, Batch & Real-time Processing, In-Memory Caching (Redis), Distributed Systems
-Frontend: React.js, Next.js, Tailwind CSS, HTML, Bootstrap
-AWARDS & HONORS
-Breakout Performer Award
-Smartbenefits • March 2026
-• Honored with the Breakout Performer Award for exceptional technical contributions and the rapid deployment of multiple end-to-end Al and
-backend features.
-CERTIFICATIONS
-LLM Engineering, RAG and AI Agents
-Udemy • April 2026
-FastAPI Full Stack Mastery
-Udemy • November 2025
-Problem Solving (Advanced)
-HackerRank • July 2024
+
+## PROJECTS
+
+### FeesDay (B2B SaaS Platform)
+*Feesday • feesday.com • January 2026 - Present*
+- Founded, designed and built a B2B SaaS platform that automates recurring-fee collection and payment reminders over email and WhatsApp, using a modular FastAPI backend and PostgreSQL (SQLAlchemy).
+- Migrated the reminder engine from a single in-process APScheduler to a decoupled serverless architecture (Celery, EventBridge, AWS Lambda, API Gateway). This isolated WhatsApp messaging from the core API and handled 1M+ requests with millisecond response times at a fraction of the prior compute cost.
+- Implemented JWT authentication with refresh-token rotation, asynchronous webhook handlers for real-time delivery tracking, and a bulk Excel/CSV import pipeline with validation.
+
+### Hemaayah
+*Smartbenefits • hemaayah.com/ • January 2026 - Present*
+- Led end-to-end architecture of Hemaayah, Pakistan's first remittance-linked health insurance product, building 3 platforms from scratch (Partner Portal, Ops Portal, Customer Website).
+- Integrated Vodafone Qatar, Ompay and Bank of Punjab Exchange via secure webhooks, triggering policy creation automatically on every qualifying remittance.
+- Automated policy delivery over WhatsApp (Botpress), enabling fully zero-touch issuance with no manual ops involvement.
+
+### AddaZakat (Social Impact Platform)
+*addazakat.com • addazakat.com • January 2024 - Present*
+- Architected a full-stack Service-Oriented Architecture (Django, FastAPI, Next.js) connecting global donors with verified NGOs and needy families, with real-time chat and notifications.
+- Integrated a conversational AI assistant using LangGraph and an MCP server to help users articulate and publish need-based stories.
+- Optimized SEO and scaled AWS infrastructure (EC2, S3, Amplify), reaching 3,000+ monthly visitors and 17,000+ views within 90 days.
+
+## SKILLS
+- **Languages & Frameworks:** Python, Django, FastAPI, Django REST Framework, SQLAlchemy, Alembic, Celery, Pytest, PHP, JavaScript
+- **AI & LLM:** LLM Applications, AI Agents, Multi-Agent Systems, Model Context Protocol (MCP), FastMCP, LangGraph, LangChain, CrewAI, Agent Development Kit (ADK), Vertex AI, RAG, Claude Code (coding agents), Pinecone, Scikit-learn
+- **Cloud & DevOps:** AWS (Lambda, Step Functions, EventBridge, S3, EC2, SQS, API Gateway, Amplify), GCP, Docker, Git, GitHub Actions, CI/CD, Cloudflare
+- **Full-Stack Development:** React.js, Next.js, REST APIs, WebSocket, Webhooks, HTML, Tailwind CSS, Bootstrap
+- **Databases:** PostgreSQL, MySQL, MongoDB, Redis, Vector Databases
+- **Integrations:** Third-Party APIs, WhatsApp API, Botpress, Payment Gateways, Google Sheets API, Enterprise Integrations
+- **Architecture:** Microservices, Serverless Architecture, Service-Oriented Architecture, System Design, Distributed Systems, Batch and Real-Time Processing, Caching
+
+## AWARDS & HONORS
+**Breakout Performer Award**
+*Smartbenefits • March 2026*
+- Honored with the Breakout Performer Award for exceptional technical contributions and the rapid deployment of multiple end-to-end AI and backend features.
+
+## CERTIFICATIONS
+- **LLM Engineering, RAG and AI Agents** - Udemy • April 2026
+- **FastAPI Full Stack Mastery** - Udemy • November 2025
+- **Problem Solving (Advanced)** - HackerRank • July 2024

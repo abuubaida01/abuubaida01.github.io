@@ -43,7 +43,10 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
-        <a href="#about" className="font-mono text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+        <a
+          href="#about"
+          className="font-mono text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-50"
+        >
           <span className="text-indigo-600 dark:text-indigo-400">AU</span>
           <span className="text-slate-400 dark:text-slate-500">.</span>
         </a>
@@ -88,12 +91,11 @@ export default function Nav() {
           </a>
           <a
             href={profile.links.resume}
-            target="_blank"
-            rel="noreferrer"
+            download="Abu-Ubaida-Resume.pdf"
             className="ml-2 inline-flex items-center gap-2 rounded-lg bg-indigo-500 px-3.5 py-2 text-sm font-medium text-white shadow-glow transition-all duration-200 hover:bg-indigo-400"
           >
             <Download className="h-4 w-4" />
-            View Resume
+            Download CV
           </a>
         </div>
 
@@ -150,12 +152,11 @@ export default function Nav() {
                 </a>
                 <a
                   href={profile.links.resume}
-                  target="_blank"
-                  rel="noreferrer"
+                  download="Abu-Ubaida-Resume.pdf"
                   className="ml-1 inline-flex items-center gap-2 rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-400"
                 >
                   <Download className="h-4 w-4" />
-                  View Resume
+                  Download CV
                 </a>
               </div>
             </div>

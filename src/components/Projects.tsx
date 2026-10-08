@@ -37,9 +37,15 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
 
-      <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-slate-50">{project.name}</h3>
-      <p className="mt-0.5 text-sm font-medium text-indigo-700/90 dark:text-indigo-300/90">{project.tagline}</p>
-      <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{project.description}</p>
+      <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-slate-50">
+        {project.name}
+      </h3>
+      <p className="mt-0.5 text-sm font-medium text-indigo-700/90 dark:text-indigo-300/90">
+        {project.tagline}
+      </p>
+      <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+        {project.description}
+      </p>
 
       <ul className="mt-4 space-y-2">
         {project.highlights.map((h) => (
